@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>SIGNUP FORM</h2>
+        <form id="registerForm">
+            <label for="firstName">First Name:</label>
+            <input type="text"  id="firstName" name="firstName" placeholder="ENTER YOUR FIRST NAME"  required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="ENTER YOUR LAST NAME">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="ENTER YOUR USERNAME" required> 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="ENTER YOUR PASSWORD" required >
+            <label for=" Confirm password"> Confirm Password:</label>
+            <input type="password" id="con_password" name="password" placeholder="ENTER YOUR PASSWORD" required >
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="ENTER YOUR EMAIL" required >
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" name="phone" minlength="10" maxlength="10" placeholder="ENTER YOUR PHONE NUMBER" required >
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" >
+            <!-- <input type="submit" id="submit" value="submit"> -->
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
