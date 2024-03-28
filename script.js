@@ -84,7 +84,7 @@ password.addEventListener("blur", ()=>{
     password.setAttribute('placeholder', 'please enter password');
     password.classList.add("change");
   }
-  if(password.value.length <= 6 || password.value.length >= 10 ){
+  if(password.value.length < 6 || password.value.length > 10 ){
     password.value = "";
     password.setAttribute('placeholder', 'password should be between 6 to 10 digits');
     password.classList.add("change");
@@ -100,4 +100,17 @@ conPassword.addEventListener("blur", ()=>{
         conPassword.setAttribute('placeholder', 'please enter same password');
         conPassword.classList.add("change");
     }  
-  });
+});
+
+submit.addEventListener("click", (e)=>{
+    e.preventDefault();
+    registerForm = document.getElementById("registerForm");
+
+    const formData = new FormData(registerForm);
+    let formValues = {};
+
+    formData.forEach(function(value, key){
+        formValues[key] = value;
+    });
+      console.log(formValues);
+})
